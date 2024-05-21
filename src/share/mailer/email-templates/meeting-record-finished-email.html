@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Email Meeting</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .box {
+        margin: auto;
+        width: 640px;
+        height: auto;
+        box-shadow: 3px 3px 3px 3px #ccc;
+        padding: 24px;
+      }
+      .header {
+        position: relative;
+        height: 56px;
+        border-bottom: 1px solid #383c43;
+      }
+      .content {
+        margin: 24px 0px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <p>
+            The meeting recording on {{date}} (UTC +0) has been uploaded. You
+            can click on the link below to access the recording file:
+          </p>
+          <p><a href="{{recordLink}}"> Recording </a>.</p>
+          <p><b>*Note:</b> The link will expire within 15 days.</p>
+          <p>
+            Regards,<br />
+            Talkin
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
